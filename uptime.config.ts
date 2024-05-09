@@ -1,6 +1,6 @@
 const pageConfig = {
   // Title for your status page
-  title: "lyc8503's Status Page",
+  title: "wen's Status Page",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
     { link: 'https://tts4free.com', label: 'tts4free' },
@@ -17,44 +17,44 @@ const workerConfig = {
       // `id` should be unique, history will be kept if the `id` remains constant
       id: 'foo_monitor',
       // `name` is used at status page and callback message
-      name: 'My API Monitor',
+      name: 'TTS4FREE',
       // `method` should be a valid HTTP Method
-      method: 'POST',
+      method: 'GET',
       // `target` is a valid URL
-      target: 'https://example.com',
+      target: 'https://tts4free.com',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
-      tooltip: 'This is a tooltip for this monitor',
+      tooltip: '',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
-      statusPageLink: 'https://example.com',
+      statusPageLink: '',
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
       expectedCodes: [200],
       // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
       timeout: 10000,
       // [OPTIONAL] headers to be sent
       headers: {
-        'User-Agent': 'Uptimeflare',
-        Authorization: 'Bearer YOUR_TOKEN_HERE',
+        'User-Agent': '',
+        Authorization: '',
       },
       // [OPTIONAL] body to be sent
-      body: 'Hello, world!',
+      body: '',
       // [OPTIONAL] if specified, the response must contains the keyword to be considered as operational.
-      responseKeyword: 'success',
+      responseKeyword: '',
       // [OPTIONAL] if specified, the check will run in your specified region,
       // refer to docs https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup before setting this value
-      checkLocationWorkerRoute: 'https://xxx.example.com',
+      checkLocationWorkerRoute: '',
     },
     // Example TCP Monitor
-    {
-      id: 'test_tcp_monitor',
-      name: 'Example TCP Monitor',
-      // `method` should be `TCP_PING` for tcp monitors
-      method: 'TCP_PING',
-      // `target` should be `host:port` for tcp monitors
-      target: '1.2.3.4:22',
-      tooltip: 'My production server SSH',
-      statusPageLink: 'https://example.com',
-      timeout: 5000,
-    },
+    // {
+    //   id: 'test_tcp_monitor',
+    //   name: 'Example TCP Monitor',
+    //   // `method` should be `TCP_PING` for tcp monitors
+    //   method: 'TCP_PING',
+    //   // `target` should be `host:port` for tcp monitors
+    //   target: '1.2.3.4:22',
+    //   tooltip: 'My production server SSH',
+    //   statusPageLink: 'https://example.com',
+    //   timeout: 5000,
+    // },
   ],
   callbacks: {
     onStatusChange: async (
