@@ -23,11 +23,11 @@ const workerConfig = {
       // `target` is a valid URL
       target: 'https://tts4free.com',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
-      //tooltip: '',
+      tooltip: '',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
-      //statusPageLink: '',
+      statusPageLink: '',
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
-      //expectedCodes: [200],
+      expectedCodes: [200],
       // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
       timeout: 10000,
       // [OPTIONAL] headers to be sent
