@@ -23,25 +23,25 @@ const workerConfig = {
       // `target` is a valid URL
       target: 'https://tts4free.com',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
-      tooltip: '',
+      //tooltip: '',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
-      statusPageLink: '',
+      //statusPageLink: '',
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
-      expectedCodes: [200],
+      //expectedCodes: [200],
       // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
       timeout: 10000,
       // [OPTIONAL] headers to be sent
-      headers: {
-        'User-Agent': '',
-        Authorization: '',
-      },
+      //headers: {
+      //  'User-Agent': '',
+      //  Authorization: '',
+      //},
       // [OPTIONAL] body to be sent
-      body: '',
+      //body: '',
       // [OPTIONAL] if specified, the response must contains the keyword to be considered as operational.
-      responseKeyword: '',
+      //responseKeyword: '',
       // [OPTIONAL] if specified, the check will run in your specified region,
       // refer to docs https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup before setting this value
-      checkLocationWorkerRoute: '',
+      //checkLocationWorkerRoute: '',
     },
     // Example TCP Monitor
     // {
